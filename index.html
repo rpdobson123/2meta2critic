@@ -1,0 +1,118 @@
+<HTML>
+<head>
+  <title>Who Reviews the Reviewmans?</title>
+  <style>
+  h2 {
+   font-size: 24px;
+  }
+  body {
+    background-image: url('./dixie-cup.jpg');
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+
+  }
+  i {
+    font-style: normal;
+  }
+  .left {
+    width: 30%;
+  }
+  .right {
+    width: 60%;
+  }
+  .panel {
+    height: min-content;
+    padding: 12px;
+    margin: 6px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px black;
+    background-color: rgba(255,255,255,0.8);
+  }
+  .radical {
+    text-shadow: 2px 2px darkmagenta, -2px -2px magenta;
+    color: aqua;
+    font-weight: 600;
+    -webkit-text-stroke: 1px black;
+    font-size: 20px;
+  }
+  .lit {
+    text-shadow: -1px -1px red, -2px 1px yellow;
+  }
+  ul {
+    font-family: monospace;
+    font-size: 18px;
+  }
+  .sad-subtext {
+    font-variant: all-small-caps;
+  }
+  .review-container {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+  }
+  .review-container span {
+    margin: 9px 0 0px 0;
+    padding: 6px;
+    width: 100%;
+    background-color: rgba( 255, 0, 0, 0.4);
+    box-shadow: 2px 2px black;
+    border-radius: 12px;
+  }
+  .review-container .score {
+    background-color: white;
+    box-shadow: 2px 2px black;
+    padding: 3px;
+    border-radius: 6px;
+  }
+  .review-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer {
+    background-color: rgba(128, 0, 128, 0.5);
+    height: fit-content;
+    padding: 12px;
+    color: white;
+    margin: auto;
+  }
+  .footer a { color: white; }
+  img {
+    border: 3px dashed black;
+    border-radius: 24px;
+    height: 200px;
+  }
+  </style>
+</head>
+<body>
+  <div class="panel left">
+    <ul>
+      <li>Home</li>
+      <li><label>Mediocre Comedies</label><div class="sad-subtext">(Seth Rogen Era)</div></li>
+      <li><label>3D Animated Films</label><div class="sad-subtext">(The ones your kids don't even like)</div></li>
+      <li><label>Kyle Chandler</label><div class="sad-subtext"> (Yes, The Guy from Friday Night Lights)</div></li>
+    </ul>
+  </div>
+  <div class="panel right">
+    <h2>Movie reviews are unchecked, audacious, and lousy with puns.</h2>
+    <p>
+      I, the <i class="radical">2meta2critic</i>, seek to beat the critics at their own game by reviewing reviews on the quality of their writing,
+      irrespective of their content. To fight <i class="lit">fire</i> with <i class="lit">fire</i>. Once more into the breach my friends, etc. etc.
+    </p>
+    <p>If you don't think content this meta deserves to exist, Burn in <i class="lit">HECK</i> (Just Playing)</p>
+    <p>Check out these <i class="radical">Mad Lad Tag Reviews</i></p>
+    <div class="review-grid">
+      <div class="review-container">
+        <img src="tag-1.png"/>
+        <span>Weak. Underconfident in pun visibility - overcompensated with quotations and distracts from criticism. <i class="score">2/10</i></span>
+      </div>
+      <div class="review-container">
+        <img src="tag-2.png"/>
+        <span>No pun in sight - never wrapped up that plot line. Ambituous, but in the end Stevens tried to tackle too many topics and ended up mastering none.<i class="score">4/10</i></span>
+      </div>
+    </div>
+  </div>
+  <div class="footer">Brought to you by 4AM, Richard Dobson and the look Charles Boyle gives Jake Peralta when he <a href="https://youtu.be/38wXlpFPwYo">makes a real doo-doo of a fuckin pun</a></div>
+</body>
+</HTML>
